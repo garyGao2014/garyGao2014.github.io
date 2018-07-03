@@ -293,7 +293,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/03/test/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/03/浅谈乐观锁与悲观锁/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="GaryGao">
@@ -312,8 +312,8 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/07/03/test/" itemprop="url">
-                  test
+                <a class="post-title-link" href="/2018/07/03/浅谈乐观锁与悲观锁/" itemprop="url">
+                  浅谈乐观锁与悲观锁
                 </a>
               
             
@@ -339,7 +339,7 @@
                 
               
 
-              <time title="创建时间：2018-07-03 17:03:08 / 修改时间：17:03:27" itemprop="dateCreated datePublished" datetime="2018-07-03T17:03:08+08:00">2018-07-03</time>
+              <time title="创建时间：2018-07-03 17:30:21 / 修改时间：18:29:06" itemprop="dateCreated datePublished" datetime="2018-07-03T17:30:21+08:00">2018-07-03</time>
             
 
             
@@ -349,6 +349,24 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/数据库/" itemprop="url" rel="index"><span itemprop="name">数据库</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -379,29 +397,16 @@
       
         
           
-          sdlfsdfsdfddddd
-ddd
-dddd
-ddd
-dddd
-ddd
-dddlfsdfsdfddddd
-ddd
-dddd
-ddddlfsdfsdfddddd
-ddd
-dddd
-ddddlfsdfsdfddddd
-ddd
-dddd
-ddddlfsdfsdfddddd
-ddd
-dddd
-ddddl
+          
+面试题：当一个商品只有10个库存，而有100并发进行抢单的时候，你该怎么保证不会超卖。
+
+我认为有多种方式都可以实现，比如缓存控制数量再用消息队列来处理真实的订单等；但今天我选择用悲观锁或乐观锁来延伸解答这个问题。
+
+悲观锁：在对任意记录进行修改前，先尝试为该记录加上排他锁（exclusive l
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/07/03/test/#more" rel="contents">
+            <a class="btn" href="/2018/07/03/浅谈乐观锁与悲观锁/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -492,7 +497,35 @@ ddddl
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
             </nav>
           
