@@ -108,25 +108,20 @@
 
 
 
-  <meta name="description" content="面试题：当一个商品只有10个库存，而有100并发进行抢单的时候，你该怎么保证不会超卖。  我认为有多种方式都可以实现，比如缓存控制数量再用消息队列来处理真实的订单等；但今天我选择用悲观锁或乐观锁来延伸解答这个问题。  悲观锁：在对任意记录进行修改前，先尝试为该记录加上排他锁（exclusive locking）。如果加锁失败，说明该记录正在被修改，那么当前查询可能要等待或者抛出异常。 具体响应方">
-<meta name="keywords" content="锁,mysql">
-<meta property="og:type" content="article">
-<meta property="og:title" content="浅谈乐观锁与悲观锁">
-<meta property="og:url" content="http://yoursite.com/2018/07/03/浅谈乐观锁与悲观锁/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="GaryGao&#39;s Blog">
+<meta property="og:url" content="http://yoursite.com/tags/mysql/index.html">
 <meta property="og:site_name" content="GaryGao&#39;s Blog">
-<meta property="og:description" content="面试题：当一个商品只有10个库存，而有100并发进行抢单的时候，你该怎么保证不会超卖。  我认为有多种方式都可以实现，比如缓存控制数量再用消息队列来处理真实的订单等；但今天我选择用悲观锁或乐观锁来延伸解答这个问题。  悲观锁：在对任意记录进行修改前，先尝试为该记录加上排他锁（exclusive locking）。如果加锁失败，说明该记录正在被修改，那么当前查询可能要等待或者抛出异常。 具体响应方">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-03T10:29:29.857Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="浅谈乐观锁与悲观锁">
-<meta name="twitter:description" content="面试题：当一个商品只有10个库存，而有100并发进行抢单的时候，你该怎么保证不会超卖。  我认为有多种方式都可以实现，比如缓存控制数量再用消息队列来处理真实的订单等；但今天我选择用悲观锁或乐观锁来延伸解答这个问题。  悲观锁：在对任意记录进行修改前，先尝试为该记录加上排他锁（exclusive locking）。如果加锁失败，说明该记录正在被修改，那么当前查询可能要等待或者抛出异常。 具体响应方">
+<meta name="twitter:title" content="GaryGao&#39;s Blog">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/03/浅谈乐观锁与悲观锁/"/>
+  <link rel="canonical" href="http://yoursite.com/tags/mysql/"/>
 
 
 
@@ -136,7 +131,7 @@
   };
 </script>
 
-  <title>浅谈乐观锁与悲观锁 | GaryGao's Blog</title>
+  <title>标签: mysql | GaryGao's Blog</title>
   
 
 
@@ -183,7 +178,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -228,7 +223,7 @@
         
         
           
-          <li class="menu-item menu-item-tags">
+          <li class="menu-item menu-item-tags menu-item-active">
     <a href="/tags/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
   </li>
@@ -257,6 +252,25 @@
   
     
 
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+
   
 
   
@@ -281,192 +295,58 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block tag">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>mysql<small>标签</small>
+        </h1>
+      </div>
 
-  
-  
-  
-
-  
+      
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/03/浅谈乐观锁与悲观锁/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="GaryGao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="GaryGao's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+            <a class="post-title-link" href="/2018/07/03/浅谈乐观锁与悲观锁/" itemprop="url">
+              
+                <span itemprop="name">浅谈乐观锁与悲观锁</span>
+              
+            </a>
         
-          <h1 class="post-title" itemprop="name headline">浅谈乐观锁与悲观锁
-              
-            
-          </h1>
-        
+      </h2>
 
-        <div class="post-meta">
-          <span class="post-time">
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-07-03T17:30:21+08:00"
+              content="2018-07-03" >
+          07-03
+        </time>
+      </div>
 
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-07-03 17:30:21 / 修改时间：18:29:29" itemprop="dateCreated datePublished" datetime="2018-07-03T17:30:21+08:00">2018-07-03</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/数据库/" itemprop="url" rel="index"><span itemprop="name">数据库</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <blockquote>
-<p>面试题：当一个商品只有10个库存，而有100并发进行抢单的时候，你该怎么保证不会超卖。</p>
-</blockquote>
-<p>我认为有多种方式都可以实现，比如缓存控制数量再用消息队列来处理真实的订单等；<br>但今天我选择用悲观锁或乐观锁来延伸解答这个问题。</p>
-<blockquote>
-<p>悲观锁：在对任意记录进行修改前，先尝试为该记录加上排他锁（exclusive locking）。如果加锁失败，说明该记录正在被修改，那么当前查询可能要等待或者抛出异常。 具体响应方式由开发者根据实际需要决定。如果成功加锁，那么就可以对记录做修改，事务完成后就会解锁了。其间如果有其他对该记录做修改或加排他锁的操作，都会等待我们解锁或直接抛出异常。</p>
-</blockquote>
-<p>悲观锁使用的是数据库提供的锁，具体的锁还需要结合数据库、引擎考虑(往后会继续讨论下去，今天先解题)</p>
-<blockquote>
-<p>乐观锁：乐观锁并不会使用数据库提供的锁机制。一般的实现乐观锁的方式就是记录数据版本。<br>数据版本,为数据增加的一个版本标识。当读取数据时，将版本标识的值一同读出，数据每更新一次，同时对版本标识进行更新。当我们提交更新的时候，判断数据库表对应记录的当前版本信息与第一次取出来的版本标识进行比对，如果数据库表当前版本号与第一次取出来的版本标识值相等，则予以更新，否则认为是过期数据。</p>
-</blockquote>
-<p>乐观锁是一种思想，依赖于我们自己定义的字段来控制是否成功。</p>
-<p>显然地从这道题上来看，我们会使用乐观锁。悲观锁会使每次查询修改均加锁，效率上带来开销，而且还会出现死锁的可能性。</p>
-<p>乐观锁具体该怎么做呢？<br>其实乐观锁就是需要我们用现有的字段或额外的字段来控制并发下的“超卖”行为。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#先把商品查出来,此时商品剩余N个</span><br><span class="line">&gt; select * from goods where id = #&#123;id&#125;</span><br><span class="line"></span><br><span class="line">#更新数量的时候，把查询出来的数量也作为条件来查询。这样当并发环境下，这条语句是有可能出现Affected rows:0的情况的。</span><br><span class="line">&gt; update goods set number=number-1 where id =#&#123;id&#125; and number=#&#123;number&#125;</span><br></pre></td></tr></table></figure>
-<p>这样我们就可以控制到“超卖”行为了。</p>
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/锁/" rel="tag"># 锁</a>
-          
-            <a href="/tags/mysql/" rel="tag"># mysql</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
       
     </div>
+
   </div>
+  
+  
+  
+
+  
 
 
           </div>
           
-
-  
-
-
 
         </div>
         
@@ -696,10 +576,6 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
-
-
 
   
 
